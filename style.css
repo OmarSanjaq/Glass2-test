@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:url(./images/R.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    font-family: sans-serif;
+    padding: 10px 0; 
+    box-shadow: 0px 5px 0px 0px rgba(0, 0,0,0.1);
+    border-radius: 3px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    padding: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    text-align: center;
+}
+li{
+    margin: 0 10px;
+    transition: 0.5s ease;
+}
+li a:hover {
+    margin: 0 10px;
+}
+li:hover{
+    transform: scale(1.1);
+
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+a:hover{
+    color: rgb(233, 169, 9);
+    transform: scale(1.1);
+}
+.name{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container h2{
+    text-transform: uppercase;
+    font-family:sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 100px;
+    letter-spacing: 4px;
+
+}
+.container p{
+    background: rgba(4, 2, 2,0.5);
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-family:sans-serif;
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 15px rgba(0, 0,0,0.3);
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+button{
+    background:#222;
+    width: 170px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 15px rgba(0, 0,0,0.5);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    font-family:'Courier New', Courier, monospace;
+    transition: 1s;
+}
+button:hover{
+    background:linear-gradient(#111,#222);
+
+    transform: scale(1.1);
+}
+
+
+@media (max-width:950px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container{
+        margin: 10px 70px;
+    }
+    .container h2{
+        font-size: 20px;
+        width: 60%;
+        margin-right: 30px;
+    }
+    nav{
+        margin-right: 250px;
+    }
+}
